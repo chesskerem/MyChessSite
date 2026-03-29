@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Kerem Chess - Lichess Clone</title>
+    <!-- Satranç Tahtası CSS -->
+    <link rel="stylesheet"
+      href="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css">
+    <style>
+        body { background: #161512; color: white; font-family: sans-serif; display: flex; flex-direction: column; align-items: center; }
+        #myBoard { width: 400px; margin-top: 20px; }
+        .info { margin-top: 20px; padding: 10px; background: #262421; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Kerem Chess</h1>
+    <div id="myBoard"></div>
+    <div class="info">
+        <p>Durum: <span id="status">Sıra Beyazda</span></p>
+    </div>
+
+    <!-- Gerekli Kütüphaneler -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
